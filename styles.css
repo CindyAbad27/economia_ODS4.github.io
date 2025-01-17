@@ -1,0 +1,189 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* Fondo claro */
+    color: #565857; /* Color de texto oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Header */
+.hero {
+    background: #734B5E; /* Fondo vino */
+    text-align: center;
+    color: #F5D3C8; /* Texto rosa pálido */
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #734B5E;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Contenedor de tarjetas para los presidentes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1200px; /* Limita el ancho de las tarjetas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo de las tarjetas */
+.card {
+    background-color: #F5D3C8; /* Fondo de tarjeta */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #734B5E; /* Título vino */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Cambio suave de color */
+}
+
+.card a:hover {
+    color: #442B37; /* Color al pasar el cursor */
+}
+
+/* Enlaces generales */
+a {
+    color: inherit; /* Hereda el color del texto */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #734B5E; /* Cambia el color al pasar el cursor */
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Secciones con información */
+.section-content {
+    background-color: #F5D3C8; /* Fondo de la sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 1200px; /* Limita el ancho de las secciones */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content h4 {
+    color: #734B5E; /* Color de título */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.section-content p {
+    color: #565857; /* Color de texto */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Enlace "Regresar" */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #734B5E; /* Color del enlace */
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #442B37; /* Color del enlace al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    background-color: #734B5E; /* Fondo vino */
+    color: #F5D3C8; /* Texto rosa pálido */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Añadido para asegurar separación con el contenido */
+}
+
+.footer-column {
+    display: inline-block;
+    width: 30%; /* Asegura que cada nombre ocupe un tercio */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.footer-column p {
+    margin: 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}

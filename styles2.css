@@ -1,0 +1,177 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #565857; /* Color de texto oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Header */
+.hero {
+    background: #734B5E; /* Fondo vino */
+    text-align: center;
+    color: #F5D3C8; /* Texto rosa pálido */
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Barra de navegación personalizada */
+.bg-custom {
+    background-color: #734B5E !important; /* Morado del header */
+    
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #734B5E;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+h4 {
+    color: #442B37; /* Color de subtítulos */
+}
+
+/* Sección de contenido */
+.section-content {
+    background-color: #F5D3C8; /* Fondo de la sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 1200px; /* Limita el ancho de las secciones */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de información con fondo semi-transparente */
+.section-container {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo del color del header con % de opacidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    color: #565857;
+}
+
+/* Media object */
+.media i {
+    margin-right: 10px;
+    color: #734B5E;
+    font-size: 2rem;
+}
+
+/* Enlaces generales */
+a {
+    color: inherit; /* Hereda el color del texto */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #734B5E; /* Cambia el color al pasar el cursor */
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Footer */
+footer {
+    background-color: #734B5E; /* Fondo vino */
+    color: #F5D3C8; /* Texto rosa pálido */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Añadido para asegurar separación con el contenido */
+}
+
+.footer-column {
+    display: inline-block;
+    width: 30%; /* Asegura que cada nombre ocupe un tercio */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.footer-column p {
+    margin: 0;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    background-color: #F5D3C8; /* Fondo rosa para las tarjetas */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición para el movimiento */
+    
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba cuando se pasa el ratón */
+}
+
+/* Estilos para las tarjetas de Positivo y Negativo */
+.positivo-card {
+    background-color: #d4edda; /* Fondo verde claro */
+    border-color: #c3e6cb; /* Borde verde */
+    color: #155724; /* Texto verde oscuro */
+}
+
+.negativo-card {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    border-color: #f5c6cb; /* Borde rojo */
+    color: #721c24; /* Texto rojo oscuro */
+}
+
+/* Aplicar el efecto hover a las tarjetas positivo y negativo */
+.positivo-card:hover,
+.negativo-card:hover {
+    transform: translateY(-10px); /* Mueve las tarjetas hacia arriba cuando se pasa el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+/* Estilos para el contenido de las tarjetas */
+.card-body {
+    padding: 20px;
+    
+    
+}
+
+.card-title {
+    font-weight: bold;
+    color: #734B5E;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Media object */
+.media i {
+    margin-right: 10px;
+    color: #734B5E;
+    font-size: 2rem;
+    
+}
